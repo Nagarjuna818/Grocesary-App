@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_baseline_check_circle_outline_24" />
+
+    <TextView
+        android:id="@+id/text_view_confirmation"
+        android:layout_below="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Congratulations!!!"
+        android:textColor="@color/green"
+        android:textSize="45dp" />
+    <TextView
+        android:layout_below="@+id/text_view_confirmation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Your Order is Completed \n You will receive the order in a few days"
+        android:textColor="@color/dark"
+        android:textSize="30dp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_shop_again"
+        android:text="Explore More"
+        android:textStyle="italic"
+        android:backgroundTint="@color/yellow"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"/>
+
+
+</RelativeLayout>

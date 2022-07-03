@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:backgroundTint="@color/yellow"
+        android:background="@drawable/ic_baseline_local_grocery_store_24">
+
+        <ImageButton
+            android:id="@+id/button_cart"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_baseline_shopping_cart_24"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!--    <com.smarteist.autoimageslider.SliderView-->
+        <!--        android:id="@+id/slider"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent"-->
+        <!--        android:layout_centerInParent="true"-->
+        <!--        app:sliderAutoCycleDirection="back_and_forth"-->
+        <!--        app:sliderIndicatorAnimationDuration="600"-->
+        <!--        app:sliderIndicatorEnabled="true"-->
+        <!--        app:sliderIndicatorGravity="center_horizontal"-->
+        <!--        app:sliderIndicatorMargin="15dp"-->
+        <!--        app:sliderIndicatorOrientation="horizontal"-->
+        <!--        app:sliderIndicatorPadding="3dp"-->
+        <!--        app:sliderIndicatorRadius="2dp"-->
+        <!--        app:sliderIndicatorSelectedColor="#5A5A5A"-->
+        <!--        app:sliderIndicatorUnselectedColor="#FFF"-->
+        <!--        app:sliderScrollTimeInSec="1"-->
+        <!--        android:layout_marginBottom="30dp"/>-->
+    </RelativeLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/dark">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+</LinearLayout>
